@@ -2,19 +2,18 @@
 const path = require('path');
 
 module.exports = {
-  entry: path.join(__dirname, 'src', 'index.js'),
+  entry: path.join(__dirname, 'src', 'index'),
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/static/', // mantém /static/bundle.js // diretório em memória
-    clean: true,
+    publicPath: '/dist/' // mantém /static/bundle.js // diretório em memória
   },
-  mode: 'development',
-  devtool: 'source-map',
-  devServer: {
-    static: { directory: __dirname }, // serve o index da pasta public
-    port: 8080,
-    open: true,
-	historyApiFallback: true,
-  },
+  module: {
+	loaders: [{
+	  test: /\.js$/,
+	  exclude: /node_modules/,
+	  include: /src/,
+	  loader: 'babel'
+	}]
+  }
 };
