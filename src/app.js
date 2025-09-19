@@ -2,13 +2,13 @@
 
 import React from 'react';
 
-var Title = React.createClass({
+const App = React.createClass({
 	render: function(){
-		return <h1>Meu títudo aqui com JSX e Hot loader</h1>
+		return <h1>Minha primeira aplicação react com hot loader funcionando</h1>
 	}
 })
 
-export default Title;
+export default App;
 // module.exports Title;
 
 
