@@ -11,6 +11,6 @@ import Title from './app';
 // console.log(sum(1, 3));
 
 render(
-	React.createElement(Title),
+	<Title />,
 	document.querySelector('[data-js="app"]')
 )

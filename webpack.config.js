@@ -2,6 +2,7 @@
 const path = require('path');
 
 module.exports = {
+  devtool: 'source-map', //configuração para mapear os arquivos no browser
   entry: path.join(__dirname, 'src', 'index'),
   output: {
     path: path.join(__dirname, 'dist'),
@@ -16,4 +17,4 @@ module.exports = {
 	  loader: 'babel'
 	}]
   }
-};
+}
