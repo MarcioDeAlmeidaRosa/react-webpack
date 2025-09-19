@@ -1,6 +1,6 @@
 {
   "scripts": {
-	  "start": "node server.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "babel-core": "6.10.4",
@@ -9,8 +9,11 @@
     "babel-preset-react": "6.11.1",
     "babel-preset-stage-0": "6.5.0",
     "react-hot-loader": "3.0.0-beta.2",
+    "standard": "4.0.0",
+    "standard-loader": "4.0.0",
     "webpack": "1.13.1",
-    "webpack-dev-server": "1.14.1"
+    "webpack-dev-server": "1.14.1",
+    "webpack-validator": "3.0.1"
   },
   "dependencies": {
     "react": "15.1.0",
