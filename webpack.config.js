@@ -25,11 +25,11 @@ module.exports = validate({
   
   module: {
 	preLoaders: [{
-		test: /\.js$/,
-		exclude: /node_modules/,
-		include: /src/,
-		loader: 'standard'
-	}],
+      test: /\.js$/,
+      exclude: /node_modules/,
+	  include: /src/,
+      loader: 'eslint'
+    }],
 	
 	loaders: [{
 	  test: /\.js$/,
